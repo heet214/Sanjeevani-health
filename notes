@@ -1,0 +1,11 @@
+- First we init npm , set some parameters and stuff
+  next we install some dependencies initially , express , mongoose , dotenv colors
+  we install dev dependency of nodemon by `npm i -D nodemon`
+  we create a gitignore file and write 'node_modules' and '.env' to ignore
+
+we then modify the package.json where we add scripts namely ,
+
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+
+this will help us write commands like 'npm run start' or 'npm run server'
