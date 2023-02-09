@@ -9,3 +9,30 @@ we then modify the package.json where we add scripts namely ,
     "server": "nodemon backend/server.js"
 
 this will help us write commands like 'npm run start' or 'npm run server'
+
+we then did , git init , git add and commit initially
+
+then we start writting into the server.js file
+
+we add our port number to the env file and then use it using process.env.VARIABLE_NAME
+
+- make sure any changes made in the env , the server needs to be restarted
+
+// ROUTES
+now we listen to routes using app.get('/xyz',(req,res)=>{res.status(200/400/404/etc).json({smthn: "smthn"})})
+
+to make the server file more clean we listen to all routes on a different file , hence we create goalRoutes file in routes folder , each resource will have its own route file
+
+next we create a controllers folder where we have goalcontrollers where we're adjusting the calling and serving of api as variables
+
+in the goalController file we have written three comments namely "description" which gives a small desc of what the func does , "acess" which defines whether the func/path will be public or private and "route" which defines how to access the route
+we can still clean the router file by grouping similar request on common routes , those are "/" & "/:id" , get set and update delete respectively
+
+we need to add req.body in order to access the body data for the request which will be used in post and update requests
+now in order to use req.body we have to use a middleware
+
+ERROR Handler
+// we have provision to provide error to the user hence we use ERROR , now by default this gives back an html error file , snce we want to change this to json we add a middleware function called errorHandler
+
+we install a package called express-async-handler , this will let us manage error and eliminate the use of try catch .catch
+we use this in the controller
