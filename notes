@@ -18,8 +18,8 @@ we add our port number to the env file and then use it using process.env.VARIABL
 
 - make sure any changes made in the env , the server needs to be restarted
 
-// ROUTES
-now we listen to routes using app.get('/xyz',(req,res)=>{res.status(200/400/404/etc).json({smthn: "smthn"})})
+* ROUTES
+  now we listen to routes using app.get('/xyz',(req,res)=>{res.status(200/400/404/etc).json({smthn: "smthn"})})
 
 to make the server file more clean we listen to all routes on a different file , hence we create goalRoutes file in routes folder , each resource will have its own route file
 
@@ -31,8 +31,16 @@ we can still clean the router file by grouping similar request on common routes 
 we need to add req.body in order to access the body data for the request which will be used in post and update requests
 now in order to use req.body we have to use a middleware
 
-ERROR Handler
-// we have provision to provide error to the user hence we use ERROR , now by default this gives back an html error file , snce we want to change this to json we add a middleware function called errorHandler
+- ERROR Handler
+  // we have provision to provide error to the user hence we use ERROR , now by default this gives back an html error file , snce we want to change this to json we add a middleware function called errorHandler
 
 we install a package called express-async-handler , this will let us manage error and eliminate the use of try catch .catch
 we use this in the controller
+
+- CONNECTION TO DATABASE
+  now we connect to the database , a mongoDB cluster and database is created and connected to application and compass also vscode too
+
+we create a config folder where db.js is created , where we connect to the database , as simple as that
+next we will create the goal Schema
+
+now we create a model folder and make a goal schema file
