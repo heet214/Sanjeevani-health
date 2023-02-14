@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+
+.health-card {
+  
+  width: 50%;
+  margin-left: 0;
+  background-color: purple;
+}
+
