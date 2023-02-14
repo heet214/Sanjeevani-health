@@ -7,7 +7,7 @@ const UserSchema = require('../models/userModel');
 //@route    POST api/users
 //@access   PUBLIC
 const registerUser = asyncHandler(async (req, res) => {
-  const { name, email, password } = req.body;
+  const { name, email, password, birthdate } = req.body;
 
   if (!name || !email || !password) {
     res.status(400);
@@ -32,6 +32,7 @@ const registerUser = asyncHandler(async (req, res) => {
     name,
     email,
     password: hashedPassword,
+    birthdate,
   });
 
   if (user) {
@@ -40,6 +41,7 @@ const registerUser = asyncHandler(async (req, res) => {
       name: user.name,
       email: user.email,
       password: user.password,
+      birthdate: user.birthdate,
       token: generateToken(user._id),
     });
   } else {
