@@ -1,4 +1,8 @@
-#root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root { 
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -46,10 +50,17 @@
   color: black;
   border-radius: 5px;
   margin-left: 0;
-  width: 80%;
+  width: 85%;
 }
 
 .navBar{
   background-color: white;
 }
 
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
