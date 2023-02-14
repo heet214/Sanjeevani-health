@@ -32,7 +32,7 @@ we need to add req.body in order to access the body data for the request which w
 now in order to use req.body we have to use a middleware
 
 - ERROR Handler
-  // we have provision to provide error to the user hence we use ERROR , now by default this gives back an html error file , snce we want to change this to json we add a middleware function called errorHandler
+  we have provision to provide error to the user hence we use throw ERROR , now by default this gives back an html error file , snce we want to change this to json we add a middleware function called errorHandler
 
 we install a package called express-async-handler , this will let us manage error and eliminate the use of try catch .catch
 we use this in the controller
@@ -44,3 +44,64 @@ we create a config folder where db.js is created , where we connect to the datab
 next we will create the goal Schema
 
 now we create a model folder and make a goal schema file
+
+--- END OF BACK END ------
+
+**JWT AUTHENTICATION**
+Create a userSchema
+
+adding the user field in goalSchema
+this is done to with every goal we have to which user created it
+
+create user routes like login , register and get personal info abt the user
+
+we npm i bcryptjs and jsonwebtoken
+
+we go into the userController where we first get all the variables needed
+
+now we start working in the register , now when we hit the post request to register user , we're obv gonna have body data
+here we takae name , email and password
+
+Register User
+
+Login User
+We take Email and Password from req.body
+next we check for empty fields
+then we findOne by email from the UserSchema Model if the user exists or not
+
+if the user exist we compare passwords by provided bcrypt function called compare
+Now we check if the user exists and also compare the password by the bcrypt provided function called compare
+
+this takes in two arguments , the password to be checked and the password from the UserSchema Model
+
+NOW WE GET INTO JSON WEB TOKENS
+we need to sign with the secret key for both register and login functions
+we create a env variable where we keep the secret key which can be anything
+
+we create a function thatll be used in both register and login functions
+this function will take in the user id as that is what we want to be used as the payload ,
+next we return
+jwt.sign({payload},secret_key,{expiresIn})
+
+now when registering and loggin in a user , the json we send will also include a token field which will generate a jsonwebtoken
+
+we create an authMiddleWare
+middlewares are functions run in between req res cycle
+
+now we try to get the user from the req.headers which has an authorization obj = req.headers.authorization
+this will have the 'Bearer <token>'
+
+we first get the token number from req.headers.authorization
+then we verify the token and check the token is valid
+when it is valid , we get the user from the decoded.id
+.select(-password) is used to exclude the password property from the obj
+
+we then attach the found user obj to req.user and send the req further and cont with the process
+
+in Routes we can attach this protect function as a parameter along with the requested route function
+
+so now as a dry run if we register/login as user A , we will get a token generated at the time of login , we use that token in getMe function route
+where we provide the token as a bearer parameter , it'll first execute the protect middleware where it will be verified and decoded ,
+and the respective user will be obtained from the decoded token , we attach the user object excluding the password to the req object by appending it to a new req.user parameter
+we now forward this req obj where it executes the getMe function , where we now have access to the req.user object which bears the respective user obj data
+and so we get the details of A

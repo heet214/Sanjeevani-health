@@ -7,16 +7,18 @@ const {
   deleteGoal,
 } = require('../controllers/goalController');
 
+const { protect } = require('../middleware/authMiddleware');
+
 //  @desc we can still clean the below 4 rotues and group them by only / and /:id
 //* router.route('/').get(getGoals).post(setGoal);
 //* router.route('/:id').put(updateGoal).delete(deleteGoal);
 
-router.get('/', getGoals);
+router.get('/', protect, getGoals);
 
-router.post('/', setGoal);
+router.post('/', protect, setGoal);
 
-router.put('/:id', updateGoal);
+router.put('/:id', protect, updateGoal);
 
-router.delete('/:id', deleteGoal);
+router.delete('/:id', protect, deleteGoal);
 
 module.exports = router;

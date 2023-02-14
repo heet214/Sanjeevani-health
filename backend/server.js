@@ -13,7 +13,9 @@ app.use(express.urlencoded({ extended: false }));
 
 //Routes
 const goalRoutes = require('./routes/goalRoutes');
+const userRoutes = require('./routes/userRoutes');
 app.use('/api/goals', goalRoutes);
+app.use('/api/users', userRoutes);
 
 // this will overwrite the default express error handler
 app.use(errorHandler);

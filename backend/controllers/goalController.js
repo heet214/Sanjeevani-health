@@ -2,13 +2,13 @@ const asyncHandler = require('express-async-handler'); // in order to use , we w
 
 // when we use mongoose to interact with the database we get a promise back , hence it is imp to use async await , with which we can use traditional try catch too
 
-const goalSchema = require('../models/goalModel');
+const GoalSchema = require('../models/goalModel');
 
 // @desc    Get goals
 //@route    GET api/goals
 //@access   Private
 const getGoals = asyncHandler(async (req, res, next) => {
-  const goals = await goalSchema.find();
+  const goals = await GoalSchema.find({ user: req.user.id });
   res.status(200).json(goals);
 });
 
@@ -23,7 +23,10 @@ const setGoal = asyncHandler(async (req, res, next) => {
     throw new Error('Please ADD TEXT FIELD');
   }
 
-  const goal = await goalSchema.create({ text: req.body.text });
+  const goal = await GoalSchema.create({
+    user: req.user.id,
+    text: req.body.text,
+  });
 
   res.status(200).json(goal);
 });
@@ -32,13 +35,27 @@ const setGoal = asyncHandler(async (req, res, next) => {
 //@route    PUT api/goals/:id
 //@access   Private
 const updateGoal = asyncHandler(async (req, res, next) => {
-  const goal = await goalSchema.findById(req.params.id);
+  const goal = await GoalSchema.findById(req.params.id);
   if (!goal) {
     res.status(400);
     throw new Error('goal not found');
   }
 
-  const updatedGoal = await goalSchema.findByIdAndUpdate(
+  const user = await UserSchema.findById(req.user.id);
+
+  // Check if the user exists
+  if (!user) {
+    res.status(401);
+    throw new Error('user not found');
+  }
+
+  //Make sure logged user , correct user matches
+  if (goal.user.toString() !== user.id) {
+    res.status(401);
+    throw new Error('user not matched');
+  }
+
+  const updatedGoal = await GoalSchema.findByIdAndUpdate(
     req.params.id, // first parameter is the id to be updated
     req.body, // second parameter is the body to be with it will be updated
     { new: true } // this will create a new goal if it doesn't exist'
@@ -50,14 +67,26 @@ const updateGoal = asyncHandler(async (req, res, next) => {
 //@route    DELETE api/goals/:id
 //@access   Private
 const deleteGoal = asyncHandler(async (req, res, next) => {
-  const goal = await goalSchema.findById(req.params.id);
+  const goal = await GoalSchema.findById(req.params.id);
   if (!goal) {
     res.status(404);
     throw new Error('Goal Does not exist');
   }
 
-  // await goal.remove();  another way we can delete a goal
-  const foundGoal = await goalSchema.findByIdAndDelete(req.params.id);
+  // Check if the user exists
+  if (!user) {
+    res.status(401);
+    throw new Error('user not found');
+  }
+
+  //Make sure logged user , correct user matches
+  if (goal.user.toString() !== user.id) {
+    res.status(401);
+    throw new Error('user not matched');
+  }
+
+  await goal.remove(); // another way we can delete a goal
+  //const foundGoal = await GoalSchema.findByIdAndDelete(req.params.id);
 
   res.status(200).json({ id: req.params.id });
 });
