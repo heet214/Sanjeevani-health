@@ -1,4 +1,8 @@
-#root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root { 
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -42,9 +46,21 @@
 }
 
 .health-card {
-  
-  width: 50%;
+  background-color: blue;
+  color: black;
+  border-radius: 5px;
   margin-left: 0;
-  background-color: purple;
+  width: 85%;
 }
 
+.navBar{
+  background-color: white;
+}
+
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
