@@ -6,7 +6,10 @@ import HealthCard from './HealthCard'
 export default function Dashboard() {
   return (
     <div>
-      <HealthCard/>
+      <div >
+              <HealthCard/>
+
+      </div>
     </div>
   )
 }

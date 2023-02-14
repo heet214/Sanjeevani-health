@@ -42,10 +42,11 @@
 }
 
 .health-card {
-  
-  width: 50%;
+  background-color: blue;
+  color: black;
+  border-radius: 5px;
   margin-left: 0;
-  background-color: rgb(148, 53, 211);
+  width: 80%;
 }
 
 .navBar{

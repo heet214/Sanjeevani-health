@@ -12,7 +12,7 @@ function NavBar() {
     <Navbar bg="light" variant="light" fixed="bottom">
     <Container>
       {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
-      <Nav className="me-auto mx-5">
+      <Nav className="mx-auto ">
         <Nav.Link href="/"><MdHomeFilled/></Nav.Link>
         <Nav.Link href="/"><FaMapMarkedAlt/></Nav.Link>
         <Nav.Link href="/"><HiDocumentText/></Nav.Link>

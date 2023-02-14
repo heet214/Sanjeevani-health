@@ -1,16 +1,20 @@
 import React from 'react'
 import "../App.css"
+import { Image } from "react-bootstrap";
+
 
 export default function HealthCard() {
   return (
-    <div>
-        <div className="card health-card"  >
-        <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="/" className="card-link">Card link</a>
-            <a href="/" className="card-link">Another link</a>
+    <div className=''>
+
+        <div className="card health-card rounded-5 position-absolute top-0 start-50 translate-middle-x my-5"  >
+            <Image className="mx-2" src="../assets/logo.png" />
+
+                <Image className="mx-auto" src="../assets/profile.jpg" />
+        <div className="card-body my-2">
+            <h5 className="card-title">Yuvraj Thakur</h5>
+            <p className="card-text">Card Number....</p>
+            
         </div>
         </div>
     </div>
