@@ -15,10 +15,11 @@
 .read-the-docs {
   color: #888;
 }
-
+.newBg{
+ margin-bottom: 0;
+}
 .health-card {
-  background-color: blue;
-  color: black;
+  color: white;
   border-radius: 5px;
   margin-left: 0;
   width: 85%;
@@ -55,3 +56,17 @@
 
   
 }
+
+.med{
+  background-color: #dcedf9;
+}
+.spo2{
+  background-color:#faf0db;
+}
+.report{
+  background-color:#dcedf9;
+}
+.virus{
+  background-color:#f2e3e9;
+}
+

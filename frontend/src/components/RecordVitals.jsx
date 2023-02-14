@@ -9,10 +9,10 @@ export default function RecordVitals() {
     <div className='main_vital_container'>
         <h4 className=' translate-middle-y'>Record Vitals</h4>
         <div className='vital_container d-flex justify-content-between '>
-          <div className='vitals'><GiMedicalPack size="25x"/></div>
-          <div className='vitals'><BiDonateBlood size="25x"/></div>
-          <div className='vitals'><TbReportAnalytics size="25x"/></div>
-          <div className='vitals'><RiVirusLine size="25x"/></div>
+          <div className='vitals med'><GiMedicalPack size="25x"/></div>
+          <div className='vitals spo2'><BiDonateBlood size="25x"/></div>
+          <div className='vitals report'><TbReportAnalytics size="25x"/></div>
+          <div className='vitals virus'><RiVirusLine size="25x"/></div>
         </div>
 
     </div>
