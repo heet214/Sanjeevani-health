@@ -1,45 +1,33 @@
 import React from 'react'
+import Carousel from 'react-bootstrap/Carousel';
+import img1 from '../assets/consultation.jpeg'
+import img2 from '../assets/insurance.jpeg'
+import img3 from '../assets/subscription.jpeg'
 
 export default function Banners() {
   return (
-    <div>
-        <div class="flex flex-col bg-white m-auto p-auto">
-<h4
-        class="flex py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 font-bold text-4xl text-gray-800"
-      >
-        Example
-      </h4>
-      <div
-        class="flex overflow-x-scroll pb-10 hide-scroll-bar"
-      >
-        <div
-          class="flex flex-nowrap lg:ml-40 md:ml-20 ml-10 "
-        >
-          <div class="inline-block px-3">
-            <div
-              class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            ></div>
-          </div>
-          <div class="inline-block px-3">
-            <div
-              class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            ></div>
-          </div>
-          <div class="inline-block px-3">
-            <div
-              class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            ></div>
-          </div>
-          <div class="inline-block px-3">
-            <div
-              class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            ></div>
-          </div>
-          
-        </div>
-      </div>
-</div>
-
-    </div>
+    <Carousel className='my-5'>
+    <Carousel.Item interval={4000}>
+      <img
+        className="d-block w-100"
+        src={img1}
+        alt="First slide"
+      />
+    </Carousel.Item>
+    <Carousel.Item interval={4000}>
+      <img
+        className="d-block w-100"
+        src={img2}
+        alt="Second slide"
+      />
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        className="d-block w-100"
+        src={img3}
+        alt="Third slide"
+      />
+    </Carousel.Item>
+  </Carousel>
   )
 }

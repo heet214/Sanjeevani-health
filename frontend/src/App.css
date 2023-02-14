@@ -70,3 +70,13 @@
   background-color:#f2e3e9;
 }
 
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  
+}
+.cardBanner {
+    display: inline-block;
+  }
