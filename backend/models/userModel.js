@@ -15,6 +15,11 @@ const userSchema = mongoose.Schema(
       type: String,
       require: [true, 'Please add a password'],
     },
+
+    birthdate: {
+      type: Date,
+      require: [true, 'Please add a birth date'],
+    },
   },
   { timestamps: true }
 );
