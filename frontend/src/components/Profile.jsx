@@ -13,7 +13,7 @@ export default function Profile() {
           <MDBCol md="12" xl="4">
             <MDBCard style={{ borderRadius: '15px',height:"50rem" }}>
             <div className="backBtn d-flex flex-start"  ><MDBBtn  style={{ borderRadius: '40%',}}>
-                    <BiArrowBack size={25}/>
+                    <BiArrowBack size='30'/>
                 </MDBBtn>
                 </div>
 
@@ -40,7 +40,7 @@ export default function Profile() {
                  Payment Setting
                 </MDBBtn>
                 <div className="text-center mt-5 mb-2">
-                  <FiLogOut size={30}/><br /> Log Out
+                  <FiLogOut size='30'/><br /> Log Out
                 </div>
               </MDBCardBody>
             </MDBCard>

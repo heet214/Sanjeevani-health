@@ -27,14 +27,9 @@ function App() {
           <Route path="/login" element={<Login />} />
 
           <Route path="/signup" element={<Signup />} />
-<<<<<<< HEAD
           <Route path='/doctor' element={<Doctor />} />
           <Route path='/profile' element={<Profile />} />
-
-=======
-          <Route path="/doctor" element={<Doctor />} />
           <Route path="/report" element={<Report />} />
->>>>>>> a61bc384ad1b3f55d490cf8822dca254527661fd
         </Routes>
 
         <NavBar />
