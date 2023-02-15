@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from "axios";
+import { Image } from 'react-bootstrap';
+import img2 from '../assets/fileUpload.png'
 
 class Spo2 extends Component {
 
@@ -58,14 +60,23 @@ class Spo2 extends Component {
   // render from here
   render() { 
       return (
-          <div>
+          <div className='container d-flex  justify-content-center '>
               {/* image input field */}
-              <input
+              {/* <input
                   type="file"
                   onChange={this.handleImagePreview}
               />
               <label>Upload file</label>
-              <button className='btn btn-primary' onClick={this.handleSubmitFile} value="Submit"/>
+              <button className='btn btn-primary' onClick={this.handleSubmitFile}>Submit</button> */}
+              <div className="drag-image ">
+                <Image src={img2} className="my-2" style={{marginBottom:"2rem",height:"20rem"}}/>
+                <div className="icon my-3"><i className="fas fa-cloud-upload-alt"></i></div>
+                <h6>Drag & Drop File Here</h6>
+                <span>OR</span>
+                
+                <button className='my-3'  onClick={this.handleSubmitFile}>Browse File</button>
+                <input type="file" hidden onChange={this.handleImagePreview}/>
+            </div>
           </div>
       );
   }
