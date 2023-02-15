@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import consultImg from "../assets/consultDoc.png";
+import { Image } from "react-bootstrap";
 export default function Map() {
 
     const [data, setData] = useState({});
@@ -31,7 +33,35 @@ export default function Map() {
   };
   return (
     <div>
-         <div className="search">
+         
+{data.main ? (
+          <MapContainer
+            className="leaflet-container "
+            center={[latitude, longitude]}
+            zoom={ZOOM_LEVEL}
+          >
+            <TileLayer url={mapTilerUrl} attribution={attribution} />
+            
+            <Marker position={[latitude, longitude]} >
+              <Popup>{location}</Popup>
+            </Marker>
+            <Marker position={[18.8033, 73.1]}>
+              <Popup>Panvel Hospital</Popup>
+            </Marker>
+            <Marker position={[18.9033, 73.25]}>
+              <Popup>Niramay Hospital</Popup>
+            </Marker>
+            <Marker position={[19.1233, 73.22]}>
+              <Popup>Vaishnav Eye Care</Popup>
+            </Marker>
+            <Marker position={[19.1133, 73.05]}>
+              <Popup>Yash Clinic</Popup>
+            </Marker>
+            
+          </MapContainer>
+        ) : <div className="]"><Image src={consultImg} style={{height:"21rem",marginTop:"14rem"}}/></div>}
+        
+        <div className="search">
           <input
             value={location}
             className="form-control my-5 text-center searchBar"
@@ -42,19 +72,6 @@ export default function Map() {
           />
         </div>
 
-{data.main ? (
-          <MapContainer
-            className="leaflet-container my-5"
-            center={[latitude, longitude]}
-            zoom={ZOOM_LEVEL}
-          >
-            <TileLayer url={mapTilerUrl} attribution={attribution} />
-            <Marker position={[latitude, longitude]}>
-              <Popup>{location}</Popup>
-            </Marker>
-          </MapContainer>
-        ) : null}
-        
     </div>
   )
 }
