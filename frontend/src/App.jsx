@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Dashboard from './components/Dashboard';
@@ -8,14 +8,20 @@ import Signup from './pages/Signup';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const [auth, setAuth] = useState(false);
+  useEffect(() => {
+    if (localStorage.getItem('currentUser')) {
+      setAuth(true);
+    }
+  }, []);
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/dashboard/:id" element={<Dashboard />} />
+
           <Route path="/login" element={<Login />} />
+
           <Route path="/signup" element={<Signup />} />
         </Routes>
 
