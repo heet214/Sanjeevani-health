@@ -1,0 +1,30 @@
+#root{
+    padding: 0px;
+    padding-top: 2rem;
+    margin-left: 5px;
+}
+.card{
+    -webkit-box-shadow: 1px 1px 7px 1px rgba(153,147,153,0.63);
+-moz-box-shadow: 1px 1px 7px 1px rgba(153,147,153,0.63);
+box-shadow: 1px 1px 7px 1px rgba(153,147,153,0.63);
+}
+.subtext{
+    text-align: left;
+    font-size: 13px;
+    font-family: "Poppins";
+    color: #878787;
+}
+.header{
+    margin-top: 5%;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.submitButton{
+    margin-top: 5%;
+    width: 90%;
+    height: 5%;
+    background-color: #1C6BA4 ;
+    border-radius: 12px;
+}

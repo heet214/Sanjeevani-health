@@ -1,0 +1,31 @@
+.notificationContainer{
+    display: flex;
+    flex-direction: row;
+
+}
+.bellIcon{
+    height: 60px;
+    width: auto;
+    border-radius: 360px;
+}
+.notificationContent{
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+}
+.button{
+    margin-top: 10px;
+}
+.stroke{
+    color: gray;
+    border: 1px solid gray;
+    background-color: white;
+    height: 38px;
+
+    margin-right: 10px; 
+}
+.fill{
+    background-color:#5669FF ;
+    height: 38px;
+}
