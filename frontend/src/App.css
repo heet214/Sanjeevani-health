@@ -80,3 +80,11 @@
 .cardBanner {
     display: inline-block;
   }
+
+.doc {
+  margin-top: 50%;
+}
+
+.docCard {
+  margin: 0% 5%;
+}
