@@ -146,17 +146,16 @@
 .navBar {
   background-color: white;
 }
-.num_n_unit{
-  
+.num_n_unit {
   display: inline-flex;
-  padding:1vh 0vw 0vh 5vw;
+  padding: 1vh 0vw 0vh 5vw;
 }
-.number_unit{
+.number_unit {
   font-weight: bold;
-  font-size: 15vw; 
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  font-size: 15vw;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.unit{
+.unit {
   padding-top: 5vh;
   padding-right: 3vw;
   padding-left: 1vw;
@@ -218,9 +217,3 @@
 .docCard {
   margin: 0% 5%;
 }
-<<<<<<< HEAD
-.profile-btn{
-  width:84%
-}
-=======
->>>>>>> a61bc384ad1b3f55d490cf8822dca254527661fd
