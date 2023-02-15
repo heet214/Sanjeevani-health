@@ -10,6 +10,7 @@ import Doctor from './pages/Doctor';
 import Report from './pages/Report';
 import Notifications from './pages/Notifications';
 import Profile from './components/Profile';
+import Intro1 from './pages/intro1';
 import Spo2 from './components/spo2';
 
 function App() {
@@ -26,11 +27,12 @@ function App() {
           <Route path="/" element={<Dashboard />} />
 
           <Route path="/login" element={<Login />} />
-
+          <Route path="/notifications" element={<Notifications />} />
           <Route path="/signup" element={<Signup />} />
           <Route path='/doctor' element={<Doctor />} />
           <Route path='/profile' element={<Profile />} />
           <Route path="/report" element={<Report />} />
+          <Route path='/intro1' element={<Intro1/>}/>
           <Route path="/spo2" element={<Spo2 />} />
 
         </Routes>
