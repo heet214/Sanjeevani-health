@@ -19,7 +19,9 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          {/* <Route path='/doctor' element={<Doctor />} /> */}
+           <Route path='/doctor' element={<Doctor />} /> 
+           <Route path='/notifications' element={<Notifications/>}></Route>
+
         </Routes>
 
         <NavBar />
