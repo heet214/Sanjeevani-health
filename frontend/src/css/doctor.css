@@ -4,20 +4,22 @@
     margin-left: 5px;
 }
 .card{
-    margin-top: 80px;
-    -webkit-box-shadow: 5px 5px 12px -7px rgba(0,0,0,0.75);
--moz-box-shadow: 5px 5px 12px -7px rgba(0,0,0,0.75);
-box-shadow: 5px 5px 12px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 7px 1px rgba(153,147,153,0.63);
+-moz-box-shadow: 1px 1px 7px 1px rgba(153,147,153,0.63);
+box-shadow: 1px 1px 7px 1px rgba(153,147,153,0.63);
 }
 .subtext{
     text-align: left;
-    font-size: 14px;
+    font-size: 13px;
     font-family: "Poppins";
-    color: gray;
+    color: #878787;
 }
-h3{
-    margin-top: 10%;
+.header{
+    margin-top: 5%;
     text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+
 }
 .submitButton{
     margin-top: 5%;

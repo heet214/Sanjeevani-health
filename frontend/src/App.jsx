@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Doctor from './pages/Doctor';
+import Notifications from './pages/Notifications';
 
 function App() {
   const [count, setCount] = useState(0);
