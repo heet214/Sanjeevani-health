@@ -8,7 +8,7 @@ export default function RecordVitals() {
   return (
     <div className="main_vital_container mx-5 my-5">
       <h4 className=" translate-middle-y"></h4>
-      <div className="vital_container d-flex justify-content-between ">
+      <div className="vital_container d-flex justify-content-between mx-2">
         <div className="vitals med shadow-sm">
           <GiMedicalPack size="25x" />
         </div>
@@ -22,15 +22,7 @@ export default function RecordVitals() {
           <RiVirusLine size="25x" />
         </div>
       </div>
-      <div className="vitals spo2 shadow-sm">
-        <BiDonateBlood size="25x" />
-      </div>
-      <div className="vitals report shadow-sm">
-        <TbReportAnalytics size="25x" />
-      </div>
-      <div className="vitals virus shadow-sm">
-        <RiVirusLine size="25x" />
-      </div>
+      
     </div>
   );
 }

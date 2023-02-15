@@ -6,10 +6,10 @@ import profile2 from '../assets/profile.jpg';
 
 export default function HealthCard() {
   return (
-    <div>
+    <div style={{marginLeft:"6%"}}>
       <div
-        className="card health-card rounded-5 position-absolute top-0 start-50 translate-middle-x my-5 shadow p-3 mb-5"
-        style={{ backgroundColor: '#1c6ba4' }}>
+        className="card health-card rounded-5 shadow mx-auto p-3 mb-5"
+        style={{ backgroundColor: '#1c6ba4',width: "95%" , marginTop: "2rem"}}>
         <div>
           <Image
             className="mx-2 rounded"

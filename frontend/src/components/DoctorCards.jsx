@@ -2,7 +2,7 @@ import React from "react";
 
 export default function DoctorCards() {
   return (
-    <div>
+    <div style={{marginLeft:"7%"}}>
       <div
         className="Doc"
         style={{
