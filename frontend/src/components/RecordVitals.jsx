@@ -30,7 +30,11 @@ export default function RecordVitals() {
           className="vitals report shadow-sm">
           <TbReportAnalytics />
         </div>
-        <div className="vitals virus shadow-sm">
+        <div
+          onClick={() => {
+            window.location = '/stress';
+          }}
+          className="vitals virus shadow-sm">
           <RiVirusLine />
         </div>
       </div>
