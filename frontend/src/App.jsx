@@ -12,6 +12,7 @@ import Notifications from './pages/Notifications';
 import Profile from './components/Profile';
 import Intro1 from './pages/intro1';
 import Spo2 from './components/spo2';
+import Map from './components/Map'
 
 function App() {
   const [auth, setAuth] = useState(false);
@@ -34,6 +35,7 @@ function App() {
           <Route path="/report" element={<Report />} />
           <Route path='/intro1' element={<Intro1/>}/>
           <Route path="/spo2" element={<Spo2 />} />
+          <Route path="/map" element={<Map/>} />
 
         </Routes>
 
