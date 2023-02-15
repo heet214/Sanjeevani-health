@@ -12,10 +12,10 @@ function NavBar() {
     <Navbar bg="white" variant="light" fixed="bottom">
     <Container>
       <Nav className="mx-auto vital_container d-flex justify-content-evenly ">
-        <Nav.Link href="/"><MdHomeFilled size={40}/></Nav.Link>
-        <Nav.Link href="/"><FaMapMarkedAlt size={40}/></Nav.Link>
-        <Nav.Link href="/"><HiDocumentText size={40}/></Nav.Link>
-        <Nav.Link href="/"><IoMdNotifications size={40}/></Nav.Link>
+        <Nav.Link href="/"><MdHomeFilled size='35' color='#1c6ba4'/></Nav.Link>
+        <Nav.Link href="/"><FaMapMarkedAlt size='35' color='#1c6ba4'/></Nav.Link>
+        <Nav.Link href="/"><HiDocumentText size='35' color='#1c6ba4'/></Nav.Link>
+        <Nav.Link href="/"><IoMdNotifications size='35' color='#1c6ba4'/></Nav.Link>
 
       </Nav>
     </Container>
