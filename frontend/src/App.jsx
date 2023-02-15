@@ -9,6 +9,7 @@ import Signup from './pages/Signup';
 import Doctor from './pages/Doctor';
 import Report from './pages/Report';
 import Notifications from './pages/Notifications';
+import Profile from './components/Profile';
 
 function App() {
   const [auth, setAuth] = useState(false);
@@ -26,7 +27,8 @@ function App() {
           <Route path="/login" element={<Login />} />
 
           <Route path="/signup" element={<Signup />} />
-          <Route path="/doctor" element={<Doctor />} />
+          <Route path='/doctor' element={<Doctor />} />
+          <Route path='/profile' element={<Profile />} />
           <Route path="/report" element={<Report />} />
         </Routes>
 
