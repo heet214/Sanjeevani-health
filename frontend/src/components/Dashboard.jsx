@@ -8,7 +8,7 @@ export default function Dashboard() {
   return (
     <div>
       <div >
-              <HealthCard/>
+              <HealthCard/> 
               <RecordVitals/>
               <Banners/>
 
