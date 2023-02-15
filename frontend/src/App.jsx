@@ -26,8 +26,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
-
+          <Route exact path="/" element={<Dashboard />} />
+          <Route path="/:value" element={<Dashboard />} />
           <Route path="/login" element={<Login />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/signup" element={<Signup />} />
