@@ -68,7 +68,7 @@ class Spo2 extends Component {
               />
               <label>Upload file</label>
               <button className='btn btn-primary' onClick={this.handleSubmitFile}>Submit</button> */}
-              <div className="drag-image ">
+              <div className="drag-image shadow ">
                 <Image src={img2} className="my-2" style={{marginBottom:"2rem",height:"20rem"}}/>
                 <div className="icon my-3"><i className="fas fa-cloud-upload-alt"></i></div>
                 <h6>Drag & Drop File Here</h6>

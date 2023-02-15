@@ -2,10 +2,10 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import '../css/doctor.css'
-import {icon} from '../assets/icon.png'
-import {icon1} from '../assets/icon1.png'
-import {icon2} from '../assets/icon2.png'
-import {icon3} from '../assets/icon3.png'
+import icon from '../assets/icon.png'
+import icon1 from '../assets/icon1.png'
+import icon2 from '../assets/icon2.png'
+import icon3 from '../assets/icon3.png'
 import { Image } from 'react-bootstrap';
 
 function doctor() {
