@@ -1,0 +1,53 @@
+[
+  {
+    "id": 100,
+    "name": "Heet Zatakia",
+    "email": "heet@gmail.com",
+    "password": "abc123",
+    "oxygen": [67],
+    "heartbeat": [95],
+    "age": 23
+  },
+  {
+    "id": 101,
+    "email": "heet1@gmail.com",
+    "name": "John Doe",
+    "password": "abc123",
+    "oxygen": [67],
+    "heartbeat": [95],
+    "age": 23
+  },
+  {
+    "id": 102,
+    "email": "heet2@gmail.com",
+    "name": "Sam Smith",
+    "password": "abc123",
+    "oxygen": [67],
+    "heartbeat": [95],
+    "age": 23
+  },
+  {
+    "id": 103,
+    "email": "heet3@gmail.com",
+    "password": "abc123",
+    "oxygen": [67],
+    "heartbeat": [95],
+    "age": 23
+  },
+  {
+    "id": 104,
+    "email": "heet4@gmail.com",
+    "password": "abc123",
+    "oxygen": [67],
+    "heartbeat": [95],
+    "age": 23
+  },
+  {
+    "id": 105,
+    "email": "heet5@gmail.com",
+    "password": "abc123",
+    "oxygen": [67],
+    "heartbeat": [95],
+    "age": 23
+  }
+]

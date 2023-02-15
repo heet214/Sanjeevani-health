@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import HeartRate from '../components/HeartRate';
 import Oxygen from '../components/Oxygen';
 import Weight from '../components/Weight';
 import Documents from '../components/Documents';
+
 function Report() {
+  const [bpm, setBpm] = useState('');
+  useEffect(() => {
+    const user = JSON.parse(localStorage.getItem('cheatUser'));
+    console.log(user);
+    setBpm(user[0].name);
+  }, []);
+
   return (
     <div className="report_container">
       <div className="report_page_heading">Reports</div>

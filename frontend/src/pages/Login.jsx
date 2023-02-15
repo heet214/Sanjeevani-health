@@ -4,28 +4,43 @@ import axios from 'axios';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [token, setToken] = useState('');
+
   const handleLogin = () => {
-    axios
-      .post('http://localhost:8000/api/users/login', {
-        email,
-        password,
-      })
-      .then((response) => {
-        console.log(response.data);
-        localStorage.setItem(
-          'currentUser',
-          JSON.stringify(response.data.token)
-        );
+    // await axios
+    //   .post('http://localhost:8000/api/users/login', {
+    //     email,
+    //     password,
+    //   })
+    //   .then((response) => {
+    //     const token = JSON.stringify(response.data.token);
+    //     console.log(response.data);
+    //     localStorage.setItem(
+    //       'currentUser',
+    //       JSON.stringify(response.data.token)
+    //     );
 
-        console.log(response.data.token);
-        setToken(response.data.token);
+    //     console.log(token, 'token');
 
-        // window.location = `/dashboard/${}`;
-      })
-      .catch(function (error) {
-        console.log(error);
+    //     window.location = `/`;
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error);
+    //   });
+
+    axios.get('../user.json').then((response) => {
+      const res = response.data;
+      console.log(res);
+      console.log(email, password);
+
+      const user = res.filter((user) => {
+        if (user.email == email && user.password == password) return user;
       });
+
+      if (user) {
+        localStorage.setItem('cheatUser', JSON.stringify(user));
+        window.location = '/';
+      }
+    });
   };
 
   return (

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   MDBCol,
   MDBContainer,
@@ -9,12 +9,18 @@ import {
   MDBCardImage,
   MDBBtn,
   MDBTypography,
-  MDBIcon,
 } from 'mdb-react-ui-kit';
 import { FiLogOut } from 'react-icons/fi';
 import { BiArrowBack } from 'react-icons/bi';
 
 export default function Profile() {
+  const [name, setName] = useState('');
+  useEffect(() => {
+    const user = JSON.parse(localStorage.getItem('cheatUser'));
+    console.log(user);
+    setName(user[0].name);
+  }, []);
+
   return (
     <div>
       <div
@@ -26,7 +32,7 @@ export default function Profile() {
               <MDBCard style={{ borderRadius: '15px', height: '50rem' }}>
                 <div className="backBtn d-flex flex-start">
                   <MDBBtn style={{ borderRadius: '40%' }}>
-                    <BiArrowBack size={25} />
+                    <BiArrowBack />
                   </MDBBtn>
                 </div>
 
@@ -39,7 +45,7 @@ export default function Profile() {
                       style={{ width: '100px' }}
                     />
                   </div>
-                  <MDBTypography tag="h4">Deshna Gandhi</MDBTypography>
+                  <MDBTypography tag="h4">{name}</MDBTypography>
                   <MDBCardText className="text-muted mb-4">
                     @Customer <span className="mx-2">|</span>{' '}
                     <a href="/">Sanjeevani.com</a>
@@ -59,7 +65,7 @@ export default function Profile() {
                     Payment Setting
                   </MDBBtn>
                   <div className="text-center mt-5 mb-2">
-                    <FiLogOut size={30} />
+                    <FiLogOut />
                     <br /> Log Out
                   </div>
                 </MDBCardBody>
