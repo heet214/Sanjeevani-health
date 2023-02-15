@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
@@ -5,8 +6,8 @@ import Dashboard from './components/Dashboard';
 import NavBar from './components/NavBar';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Doctor from './pages/Doctor';
+import Report from './pages/Report';
 
 function App() {
   const [auth, setAuth] = useState(false);
@@ -19,12 +20,13 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/dashboard/:id" element={<Dashboard />} />
+          <Route path="/" element={<Dashboard />} />
 
           <Route path="/login" element={<Login />} />
 
           <Route path="/signup" element={<Signup />} />
-          <Route path='/doctor' element={<Doctor />} />
+          <Route path="/doctor" element={<Doctor />} />
+          <Route path="/report" element={<Report />} />
         </Routes>
 
         <NavBar />
