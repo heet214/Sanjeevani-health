@@ -60,11 +60,11 @@ class Spo2 extends Component {
       return (
           <div>
               {/* image input field */}
-              <input
+              <input 
                   type="file"
                   onChange={this.handleImagePreview}
               />
-              <label>Upload file</label>
+              <button className='btn btn-primary'>Upload file</button>
               <input type="submit" onClick={this.handleSubmitFile} value="Submit"/>
           </div>
       );

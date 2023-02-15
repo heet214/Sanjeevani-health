@@ -10,6 +10,7 @@ import Doctor from './pages/Doctor';
 import Report from './pages/Report';
 import Notifications from './pages/Notifications';
 import Profile from './components/Profile';
+import Spo2 from './components/spo2';
 
 function App() {
   const [auth, setAuth] = useState(false);
@@ -30,6 +31,8 @@ function App() {
           <Route path='/doctor' element={<Doctor />} />
           <Route path='/profile' element={<Profile />} />
           <Route path="/report" element={<Report />} />
+          <Route path="/spo2" element={<Spo2 />} />
+
         </Routes>
 
         <NavBar />
