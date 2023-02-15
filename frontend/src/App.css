@@ -2,7 +2,7 @@
 
 #root { 
   /* max-width: 1280px; */
-  margin: 47% auto;
+  margin: 0 auto;
   /* padding: 2rem; */
   text-align: center;
   overflow-x: hidden;
@@ -39,9 +39,11 @@
 
 .main_vital_container{
   width: 80vw;
+  height: 50px;
 }
 .vital_container{
-  width: 99%;
+  width: 100%;
+  /* margin-top: 75% ; */
 
 }
 
@@ -80,3 +82,11 @@
 .cardBanner {
     display: inline-block;
   }
+
+.doc {
+  margin-top: 50%;
+}
+
+.docCard {
+  margin: 0% 5%;
+}
