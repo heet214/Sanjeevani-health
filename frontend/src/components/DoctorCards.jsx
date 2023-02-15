@@ -12,7 +12,7 @@ export default function DoctorCards() {
         <h4>Doctors</h4>
       </div>
 
-      <div className="d-flex flex-row mb-2" style={{ marginTop: "-4rem",marginLeft:"1rem" }}>
+      <div className="d-flex flex-row mb-2" style={{ marginTop: "3rem",marginLeft:"1rem" }}>
         <div className="card docCard p-2" style={{ height: "13rem", width: "45%",marginLeft:"auto" }}>
           <img src="" className="card-img-top" alt="doc1" />
           <div className="card-body">

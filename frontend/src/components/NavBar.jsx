@@ -9,7 +9,7 @@ import {IoMdNotifications} from 'react-icons/Io'
 function NavBar() {
   return (
     <div className="navBar">
-    <Navbar bg="white" variant="light" fixed="bottom" >
+    <Navbar bg="white" variant="light" fixed="bottom">
     <Container>
       <Nav className="mx-auto vital_container d-flex justify-content-evenly ">
         <Nav.Link href="/"><MdHomeFilled size={40}/></Nav.Link>
