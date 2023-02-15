@@ -66,7 +66,7 @@ class Spo2 extends Component {
               />
               <button className='btn btn-primary'>Upload file</button>
               <input type="submit" onClick={this.handleSubmitFile} value="Submit"/>
-          </div>
+          </div> 
       );
   }
 }
