@@ -12,6 +12,8 @@ import Notifications from './pages/Notifications';
 import Profile from './components/Profile';
 import Intro1 from './pages/intro1';
 import Spo2 from './components/spo2';
+import Map from './components/Map';
+import HeartVitals from './components/HeartVitals';
 
 function App() {
   const [auth, setAuth] = useState(false);
@@ -29,12 +31,13 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path='/doctor' element={<Doctor />} />
-          <Route path='/profile' element={<Profile />} />
+          <Route path="/doctor" element={<Doctor />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/report" element={<Report />} />
-          <Route path='/intro1' element={<Intro1/>}/>
+          <Route path="/intro1" element={<Intro1 />} />
           <Route path="/spo2" element={<Spo2 />} />
-
+          <Route path="/map" element={<Map />} />
+          <Route path="/heart" element={<HeartVitals />} />
         </Routes>
 
         <NavBar />

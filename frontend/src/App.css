@@ -277,3 +277,21 @@
   object-fit: cover;
   border-radius: 5px;
 }
+
+
+.searchBar{
+  width:60%;
+  align-items:center;
+  padding:13px;
+  margin-left:20%
+
+}
+
+.leaflet-container { 
+  
+   margin-left: 0;
+   margin-top: 0;
+   height: 75vh;
+   width: 100%; 
+   margin-bottom: 30px;
+}

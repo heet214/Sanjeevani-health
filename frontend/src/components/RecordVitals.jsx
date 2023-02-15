@@ -9,13 +9,25 @@ export default function RecordVitals() {
     <div className="main_vital_container mx-5 my-5">
       <h4 className=" translate-middle-y"></h4>
       <div className="vital_container d-flex justify-content-between mx-2">
-        <div className="vitals med shadow-sm">
+        <div
+          onClick={() => {
+            window.location = '/spo2';
+          }}
+          className="vitals med shadow-sm">
           <GiMedicalPack />
         </div>
-        <div className="vitals spo2 shadow-sm">
+        <div
+          onClick={() => {
+            window.location = '/heart';
+          }}
+          className="vitals spo2 shadow-sm">
           <BiDonateBlood />
         </div>
-        <div className="vitals report shadow-sm">
+        <div
+          onClick={() => {
+            window.location = '/bloodpressure';
+          }}
+          className="vitals report shadow-sm">
           <TbReportAnalytics />
         </div>
         <div className="vitals virus shadow-sm">
