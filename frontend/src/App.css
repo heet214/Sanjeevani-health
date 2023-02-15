@@ -20,25 +20,77 @@
   margin-bottom: 0;
 }
 
+.report_page_heading {
+  margin: 2rem auto 1rem 2rem;
+  font-size: 2rem;
+  font-weight: 800;
+}
 /* REPORT CONTAINER CSS */
 .report_container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .oxygen_container {
-  height: 10rem;
-  width: 50%;
+  height: 11rem;
+  width: 40%;
   background-color: #fec6c6;
+  border-radius: 25px;
+  padding: 1rem 2rem;
+}
+.oxygen_top {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 0.5rem;
+}
+
+.oxygen_bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.oxygen_unit {
+  margin-right: auto;
+}
+.oxygen_number {
+  margin-right: auto;
 }
 .weight_container {
-  height: 10rem;
-  width: 50%;
+  padding: 1rem 2rem;
+  height: 11rem;
+  width: 40%;
   background: #faf0db;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
 }
+.weight_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+.weight_bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.weight_unit {
+  margin-right: auto;
+}
+.weight_number {
+  margin-right: auto;
+}
+
 .second_row_container {
   display: flex;
   flex-direction: row;
+
+  justify-content: space-around;
 }
 /* Heart Card and Reports*/
 .health-card {
@@ -64,7 +116,7 @@
   border-radius: 5px;
   margin: 0 auto;
   height: 12rem;
-  width: 85%;
+  width: 90%;
 }
 .number_rate {
   font-size: 1.2rem;

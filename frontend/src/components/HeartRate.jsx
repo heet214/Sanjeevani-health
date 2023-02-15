@@ -4,7 +4,7 @@ function HeartRate() {
   return (
     <div className="heart_rate_container">
       <div
-        className="heart-card rounded-5 shadow p-4 mb-5 d-flex justify-content-around"
+        className="heart-card rounded-5 p-4 mb-4 d-flex justify-content-around"
         style={{ backgroundColor: '#DCEDF9' }}>
         <div className="heart_rate_left">
           <div className="number_rate" style={{ padding: '1vh 3vh 0vw 4vw' }}>
