@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&family=Poppins:wght@300;500;700&display=swap');
 
-
-#root { 
+#root {
   /* max-width: 1280px; */
   margin: 0 auto;
   /* padding: 2rem; */
   text-align: center;
-  overflow-x: hidden;
+
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .card {
@@ -15,18 +16,98 @@
 .read-the-docs {
   color: #888;
 }
-.newBg{
- margin-bottom: 0;
+.newBg {
+  margin-bottom: 0;
 }
+
+/* REPORT CONTAINER CSS */
+.report_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.oxygen_container {
+  height: 10rem;
+  width: 50%;
+  background-color: #fec6c6;
+}
+.weight_container {
+  height: 10rem;
+  width: 50%;
+  background: #faf0db;
+}
+.second_row_container {
+  display: flex;
+  flex-direction: row;
+}
+/* Heart Card and Reports*/
 .health-card {
   color: white;
   border-radius: 5px;
-  margin-left: 0;
+}
+.heart_rate_left {
+  font-family: 'Nunito Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  /* background-color: black; */
+  color: black;
+  width: 36vw;
+  height: 8rem;
+  text-align: center;
+  margin-left: 1rem;
+}
+.heart-card {
+  background-color: #dcedf9;
+  color: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  height: 12rem;
   width: 85%;
 }
+.number_rate {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.num_n_unit {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.number_unit {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.unit {
+  padding-top: 5vh;
+  padding-right: 3vw;
+  padding-left: 1vw;
+  font-size: 1.5rem;
+}
 
-.navBar{
+.heart_rate_right {
+  margin-left: 23px;
+  margin-top: 10px;
+}
+
+.navBar {
   background-color: white;
+}
+.num_n_unit{
+  
+  display: inline-flex;
+  padding:1vh 0vw 0vh 5vw;
+}
+.number_unit{
+  font-weight: bold;
+  font-size: 15vw; 
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.unit{
+  padding-top: 5vh;
+  padding-right: 3vw;
+  padding-left: 1vw;
 }
 
 .hide-scroll-bar {
@@ -37,14 +118,13 @@
   display: none;
 }
 
-.main_vital_container{
+.main_vital_container {
   width: 80vw;
   height: 50px;
 }
-.vital_container{
+.vital_container {
   width: 100%;
   /* margin-top: 75% ; */
-
 }
 
 .vitals {
@@ -55,33 +135,29 @@
   text-align: center;
   justify-content: center;
   padding: 15px;
-
-  
 }
 
-.med{
+.med {
   background-color: #dcedf9;
 }
-.spo2{
-  background-color:#faf0db;
+.spo2 {
+  background-color: #faf0db;
 }
-.report{
-  background-color:#dcedf9;
+.report {
+  background-color: #dcedf9;
 }
-.virus{
-  background-color:#f2e3e9;
+.virus {
+  background-color: #f2e3e9;
 }
 
 .scrolling-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-
-  
 }
 .cardBanner {
-    display: inline-block;
-  }
+  display: inline-block;
+}
 
 .doc {
   margin-top: 50%;
@@ -90,6 +166,9 @@
 .docCard {
   margin: 0% 5%;
 }
+<<<<<<< HEAD
 .profile-btn{
   width:84%
 }
+=======
+>>>>>>> a61bc384ad1b3f55d490cf8822dca254527661fd

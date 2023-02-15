@@ -4,7 +4,7 @@ import axios from 'axios';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
+  const [token, setToken] = useState('');
   const handleLogin = () => {
     axios
       .post('http://localhost:8000/api/users/login', {
@@ -13,7 +13,15 @@ const Login = () => {
       })
       .then((response) => {
         console.log(response.data);
-        localStorage.setItem('currentUser', response.data.token);
+        localStorage.setItem(
+          'currentUser',
+          JSON.stringify(response.data.token)
+        );
+
+        console.log(response.data.token);
+        setToken(response.data.token);
+
+        // window.location = `/dashboard/${}`;
       })
       .catch(function (error) {
         console.log(error);

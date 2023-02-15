@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "proxy":"http://localhost:5000/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -19,6 +20,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.8.1",
+    "react-webcam": "^7.0.1",
     "router-dom": "^2.2.10"
   },
   "devDependencies": {
