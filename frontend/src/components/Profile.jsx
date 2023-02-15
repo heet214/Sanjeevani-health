@@ -12,7 +12,7 @@ import {
   MDBIcon,
 } from 'mdb-react-ui-kit';
 import { FiLogOut } from 'react-icons/fi';
-import { CiLogin } from 'react-icons/ci';
+import { BiArrowBack } from 'react-icons/bi';
 
 export default function Profile() {
   return (
@@ -26,7 +26,7 @@ export default function Profile() {
               <MDBCard style={{ borderRadius: '15px', height: '50rem' }}>
                 <div className="backBtn d-flex flex-start">
                   <MDBBtn style={{ borderRadius: '40%' }}>
-                    <CiLogin />
+                    <BiArrowBack size={25} />
                   </MDBBtn>
                 </div>
 
@@ -59,7 +59,7 @@ export default function Profile() {
                     Payment Setting
                   </MDBBtn>
                   <div className="text-center mt-5 mb-2">
-                    <FiLogOut />
+                    <FiLogOut size={30} />
                     <br /> Log Out
                   </div>
                 </MDBCardBody>
