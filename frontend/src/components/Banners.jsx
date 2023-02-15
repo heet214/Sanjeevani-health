@@ -6,7 +6,7 @@ import img3 from '../assets/subscription.jpeg';
 
 export default function Banners() {
   return (
-    <Carousel className="my-5">
+    <Carousel className="my-5" indicators={false} controls={false}>
       <Carousel.Item interval={4000}>
         <img className="d-block w-100" src={img1} alt="First slide" />
       </Carousel.Item>

@@ -18,7 +18,7 @@ function doctor() {
     </Card>
 
     <div className='aboutMe'>
-      <h3>About Me</h3>
+      <p className='header'>About Me</p>
 
       <p className='subtext' id='aboutMeContent'>
       Dr. Eva Mars is the top most immunologists specialists in Crist Hospital in London, UK. She achived several awards for her wonderful contribution Read More...
@@ -27,7 +27,7 @@ function doctor() {
     </div>
 
     <div className='patientInfo'>
-        <h3>Patient Information</h3>
+        <p className='header'>Patient Information</p>
         <div className='subtext' >Patient's Name: Ferrucio Tuccine </div>
         <div className='subtext' >Gender: Male </div>
 

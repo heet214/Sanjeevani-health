@@ -8,6 +8,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Doctor from './pages/Doctor';
 import Report from './pages/Report';
+import Notifications from './pages/Notifications';
 
 function App() {
   const [auth, setAuth] = useState(false);
