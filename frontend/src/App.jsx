@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Doctor from './pages/Doctor';
+import Notifications from './pages/Notifications';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,6 +20,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path='/doctor' element={<Doctor />} />
+          <Route path = '/notifications' element={<Notifications />} />
         </Routes>
 
         <NavBar />
