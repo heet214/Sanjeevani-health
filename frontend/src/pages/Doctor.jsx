@@ -7,7 +7,7 @@ function doctor() {
   return (
     <div className="container">
     
-    <Card style={{ width: '22rem', padding: '0px' , margin:'0px' , margin:'auto' }}>
+    <Card style={{ width: '22rem', padding: '0px' , margin:'auto' }}>
       <Card.Img className='doctorImage' variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-r_VImHWRaA2c-ck8KAn4cp-JT5yruwW6Ew&usqp=CAU" />
       <Card.Body>
         <Card.Title id="doctorName" style={{margin: '0px' , textAlign : 'left' ,fontSize:'18px' , fontFamily:'Poppins', fontWeight:'bold'}}>Dr. Yuvraj Thakur</Card.Title>

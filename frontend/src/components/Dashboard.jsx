@@ -12,7 +12,7 @@ export default function Dashboard() {
               <HealthCard/>
               <RecordVitals/>
               <Banners/>
-              <DoctorCards/>
+              {/* <DoctorCards/> */}
 
       </div>
     </div>
