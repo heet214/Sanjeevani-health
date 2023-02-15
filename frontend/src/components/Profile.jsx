@@ -16,10 +16,19 @@ import { BiArrowBack } from 'react-icons/bi';
 export default function Profile() {
   const [name, setName] = useState('');
   useEffect(() => {
+    if (!localStorage.getItem('cheatUser')) return (window.location = '/login');
     const user = JSON.parse(localStorage.getItem('cheatUser'));
     console.log(user);
     setName(user[0].name);
   }, []);
+
+  const handlelogout = () => {
+    if (localStorage.getItem('cheatUser')) {
+      console.log('function called');
+      localStorage.removeItem('cheatUser');
+      window.location = '/login';
+    }
+  };
 
   return (
     <div>
@@ -64,7 +73,7 @@ export default function Profile() {
                   <MDBBtn rounded size="lg" className="my-2 profile-btn">
                     Payment Setting
                   </MDBBtn>
-                  <div className="text-center mt-5 mb-2">
+                  <div onClick={handlelogout} className="text-center mt-5 mb-2">
                     <FiLogOut />
                     <br /> Log Out
                   </div>

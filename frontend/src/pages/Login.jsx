@@ -27,20 +27,18 @@ const Login = () => {
     //     console.log(error);
     //   });
 
-    axios.get('../user.json').then((response) => {
-      const res = response.data;
-      console.log(res);
-      console.log(email, password);
+    console.log(email, password);
 
-      const user = res.filter((user) => {
-        if (user.email == email && user.password == password) return user;
-      });
-
-      if (user) {
-        localStorage.setItem('cheatUser', JSON.stringify(user));
-        window.location = '/';
-      }
+    const userfile = JSON.parse(localStorage.getItem('userJSON'));
+    console.log(userfile);
+    const user = userfile.filter((user) => {
+      if (user.email == email && user.password == password) return user;
     });
+
+    if (user) {
+      localStorage.setItem('cheatUser', JSON.stringify(user));
+      window.location = '/';
+    }
   };
 
   return (

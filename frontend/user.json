@@ -5,7 +5,8 @@
     "email": "heet@gmail.com",
     "password": "abc123",
     "oxygen": [67],
-    "heartbeat": [95],
+    "heartbeat": [95, 67, 88, 89, 90, 85],
+    "blood_pressure": [],
     "age": 23
   },
   {

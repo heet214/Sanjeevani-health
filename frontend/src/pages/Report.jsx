@@ -7,6 +7,7 @@ import Documents from '../components/Documents';
 function Report() {
   const [bpm, setBpm] = useState('');
   useEffect(() => {
+    if (!localStorage.getItem('cheatUser')) return (window.location = '/login');
     const user = JSON.parse(localStorage.getItem('cheatUser'));
     console.log(user);
     setBpm(user[0].name);

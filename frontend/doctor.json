@@ -1,0 +1,170 @@
+[
+  {
+    "gender": "female",
+    "name": "Dr. Jennie Nichols",
+    "specialization": "Pediatric",
+    "location": {
+      "city": "Billings",
+      "state": "Michigan",
+      "country": "United States",
+      "postcode": "63104"
+    },
+    "email": "jennie.nichols@example.com",
+
+    "phone": "(272) 790-0888",
+    "cell": "(489) 330-2385",
+    "id": {
+      "name": "SSN",
+      "value": "405-88-3636"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/75.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/75.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/75.jpg"
+    }
+  },
+  {
+    "gender": "male",
+    "name": "Dr. Aarom Nichols",
+    "specialization": "Pediatric",
+    "location": {
+      "city": "Arizona",
+      "state": "Michigan",
+      "country": "United States",
+      "postcode": "63104"
+    },
+    "email": "aaron.nichols@example.com",
+
+    "phone": "(272) 790-0888",
+    "cell": "(489) 330-2385",
+    "id": {
+      "name": "SSN",
+      "value": "405-88-3636"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/75.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+    }
+  },
+  {
+    "gender": "male",
+    "name": "Dr. Amir Stylus",
+    "specialization": "Physician",
+    "location": {
+      "city": "Billings",
+      "state": "Michigan",
+      "country": "United States",
+      "postcode": "63104"
+    },
+    "email": "amir.stylus@example.com",
+
+    "phone": "(272) 790-0888",
+    "cell": "(489) 330-2385",
+    "id": {
+      "name": "SSN",
+      "value": "405-88-3636"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/70.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/70.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/70.jpg"
+    }
+  },
+  {
+    "gender": "female",
+    "name": "Dr. Karen Bencher",
+    "specialization": "Dentist",
+    "location": {
+      "city": "Billings",
+      "state": "Michigan",
+      "country": "United States",
+      "postcode": "63104"
+    },
+    "email": "karen.dent@example.com",
+
+    "phone": "(272) 790-0888",
+    "cell": "(489) 330-2385",
+    "id": {
+      "name": "SSN",
+      "value": "405-88-3636"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/71x.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/71.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/71.jpg"
+    }
+  },
+  {
+    "gender": "female",
+    "name": "Dr. Jennie Nichols",
+    "specialization": "Pediatric",
+    "location": {
+      "city": "Billings",
+      "state": "Michigan",
+      "country": "United States",
+      "postcode": "63104"
+    },
+    "email": "jennie.nichols@example.com",
+
+    "phone": "(272) 790-0888",
+    "cell": "(489) 330-2385",
+    "id": {
+      "name": "SSN",
+      "value": "405-88-3636"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/75.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+    }
+  },
+  {
+    "gender": "male",
+    "name": "Dr. Saka Sakai",
+    "specialization": "Pediatric",
+    "location": {
+      "city": "Billings",
+      "state": "Michigan",
+      "country": "United States",
+      "postcode": "63104"
+    },
+    "email": "jennie.nichols@example.com",
+
+    "phone": "(272) 790-0888",
+    "cell": "(489) 330-2385",
+    "id": {
+      "name": "SSN",
+      "value": "405-88-3636"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/72.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/72.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/72.jpg"
+    }
+  },
+  {
+    "gender": "female",
+    "name": "Dr. Jennie Nichols",
+    "specialization": "Pediatric",
+    "location": {
+      "city": "Billings",
+      "state": "Michigan",
+      "country": "United States",
+      "postcode": "63104"
+    },
+    "email": "jennie.nichols@example.com",
+
+    "phone": "(272) 790-0888",
+    "cell": "(489) 330-2385",
+    "id": {
+      "name": "SSN",
+      "value": "405-88-3636"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/71.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/71.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/71.jpg"
+    }
+  }
+]
