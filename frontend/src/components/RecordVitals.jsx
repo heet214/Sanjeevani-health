@@ -14,28 +14,28 @@ export default function RecordVitals() {
             window.location = '/spo2';
           }}
           className="vitals med shadow-sm">
-          <GiMedicalPack />
+          <GiMedicalPack size={35}/>
         </div>
         <div
           onClick={() => {
             window.location = '/heart';
           }}
           className="vitals spo2 shadow-sm">
-          <BiDonateBlood />
+          <BiDonateBlood size={35} />
         </div>
         <div
           onClick={() => {
             window.location = '/bloodpressure';
           }}
           className="vitals report shadow-sm">
-          <TbReportAnalytics />
+          <TbReportAnalytics size={35} />
         </div>
         <div
           onClick={() => {
             window.location = '/stress';
           }}
           className="vitals virus shadow-sm">
-          <RiVirusLine />
+          <RiVirusLine size={35} />
         </div>
       </div>
     </div>
