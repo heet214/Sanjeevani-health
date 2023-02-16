@@ -42,6 +42,8 @@ class Spo2 extends Component {
         })
         .then((res) => {
           console.log(res.data);
+          const data = JSON.stringify(res.data);
+          sessionStorage.setItem('spo2', data);
         })
         .catch((err) => {
           console.log(err);
