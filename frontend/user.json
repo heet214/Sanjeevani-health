@@ -4,7 +4,7 @@
     "name": "Heet Zatakia",
     "email": "heet@gmail.com",
     "password": "abc123",
-    "oxygen": [67],
+    "oxygen": [67, 90, 91, 93, 97, 94, 95],
     "heartbeat": [95, 67, 88, 89, 90, 85],
     "blood_pressure": [],
     "age": 23

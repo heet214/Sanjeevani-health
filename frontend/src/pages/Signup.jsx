@@ -15,26 +15,28 @@ const Signup = () => {
       .get('../user.json')
       .then((response) => {
         console.log(response.data);
-        sessionStorage.setItem('userJSON', JSON.stringify(response.data));
+        const userdata = response.data;
+        console.log(userdata);
+        sessionStorage.setItem('userJSON', JSON.stringify(userdata));
+        console.log('done');
+        const obj = {
+          id: Math.floor(100000 + Math.random() * 900000),
+          name,
+          email,
+          password,
+          age,
+        };
+
+        console.log(obj);
+        const file = sessionStorage.getItem('userJSON');
+        file.push(obj);
+        sessionStorage.setItem('userJSON', JSON.stringify(file));
+        console.log(file);
       })
       .catch(function (error) {
         console.log(error);
       });
 
-    const obj = {
-      id: Math.floor(100000 + Math.random() * 900000),
-      name,
-      email,
-      password,
-      age,
-    };
-
-    console.log(obj);
-
-    const file = JSON.parse(sessionStorage.getItem('userJSON'));
-    file.push(obj);
-    sessionStorage.setItem('userJSON', JSON.stringify(file));
-    console.log(file);
     window.location = '/login';
   };
 
