@@ -16,7 +16,7 @@ import Map from './components/Map';
 import HeartVitals from './components/HeartVitals';
 import Bpm from './pages/Bpm';
 import Subscribe from './pages/Subscribe';
-import Stress from './pages/Stress'  
+import Stress from './pages/Stress';
 
 function App() {
   const [auth, setAuth] = useState(false);
@@ -39,6 +39,7 @@ function App() {
           <Route path="/report/:value" element={<Report />} />
           <Route path="/intro1" element={<Intro1 />} />
           <Route path="/spo2" element={<Spo2 />} />
+          <Route path="/spo2/:val" element={<Report />} />
           <Route path="/map" element={<Map />} />
           <Route path="/heart" element={<HeartVitals />} />
           <Route path="/bpm" element={<Bpm />} />

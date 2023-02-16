@@ -3,7 +3,7 @@ import HeartRate from '../components/HeartRate';
 import Oxygen from '../components/Oxygen';
 import Weight from '../components/Weight';
 import Documents from '../components/Documents';
-import img1 from '../assets/runningPerson.jpeg'
+import img1 from '../assets/runningPerson.jpeg';
 
 function Report() {
   // const [bpm, setBpm] = useState('');
@@ -25,6 +25,11 @@ function Report() {
   } else {
     sessionStorage.setItem('heart_rate', value);
   }
+  if (value === 'spo') {
+    sessionStorage.setItem('spo2', Math.floor(Math.random() * 95) + 4);
+  } else {
+    sessionStorage.setItem('spo2', value);
+  }
 
   return (
     <div className="report_container">
@@ -45,7 +50,7 @@ function Report() {
         <Weight />
       </div>
       <div className="third_row_container">
-        <img src={img1} width='100%'  height='100%'  />
+        <img src={img1} width="100%" height="100%" />
       </div>
     </div>
   );
