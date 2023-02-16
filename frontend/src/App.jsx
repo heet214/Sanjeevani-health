@@ -15,6 +15,7 @@ import Spo2 from './components/spo2';
 import Map from './components/Map'
 import HeartVitals from './components/HeartVitals';
 import Bpm from './pages/Bpm';
+import Stress from './pages/stress';
 
 function App() {
   const [auth, setAuth] = useState(false);
@@ -40,6 +41,7 @@ function App() {
           <Route path="/map" element={<Map/>} />
           <Route path="/heart" element={<HeartVitals/>} />
           <Route path="/bpm" element={<Bpm/>} />
+          <Route path="/stress" element={<Stress  />} />
         </Routes>
 
         <NavBar />
