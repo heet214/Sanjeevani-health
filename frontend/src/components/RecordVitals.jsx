@@ -25,7 +25,7 @@ export default function RecordVitals() {
         </div>
         <div
           onClick={() => {
-            window.location = '/bloodpressure';
+            window.location = '/bpm';
           }}
           className="vitals report shadow-sm">
           <TbReportAnalytics size={35} />

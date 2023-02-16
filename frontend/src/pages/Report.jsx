@@ -21,9 +21,9 @@ function Report() {
   var value = urlArray[urlArray.length - 1];
   console.log('value', value);
   if (value === 'report') {
-    sessionStorage.setItem('heart_rate', 77);
+    sessionStorage.setItem('heart_rate', 81);
   } else {
-    return sessionStorage.setItem('heart_rate', value);
+    sessionStorage.setItem('heart_rate', value);
   }
 
   return (
