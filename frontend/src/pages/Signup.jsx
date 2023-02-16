@@ -11,20 +11,15 @@ const Signup = () => {
 
   const handleRegister = () => {
     // e.preventDefault();
-    // axios
-    //   .post('http://localhost:8000/api/users/register', {
-    //     email,
-    //     password,
-    //     name,
-    //     birthdate,
-    //   })
-    //   .then((response) => {
-    //     console.log(response.data);
-    //     window.location = '/login';
-    //   })
-    //   .catch(function (error) {
-    //     console.log(error);
-    //   });
+    axios
+      .get('../user.json')
+      .then((response) => {
+        console.log(response.data);
+        sessionStorage.setItem('userJSON', JSON.stringify(response.data));
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
 
     const obj = {
       id: Math.floor(100000 + Math.random() * 900000),
@@ -36,9 +31,9 @@ const Signup = () => {
 
     console.log(obj);
 
-    const file = JSON.parse(localStorage.getItem('userJSON'));
+    const file = JSON.parse(sessionStorage.getItem('userJSON'));
     file.push(obj);
-    localStorage.setItem('userJSON', JSON.stringify(file));
+    sessionStorage.setItem('userJSON', JSON.stringify(file));
     console.log(file);
     window.location = '/login';
   };
@@ -104,7 +99,13 @@ const Signup = () => {
         Register
       </button>
       <p className="loginText">
-        Already Registered ? <strong>Login</strong>{' '}
+        Already Registered ?{' '}
+        <span
+          onClick={() => {
+            window.location = '/login';
+          }}>
+          Login
+        </span>
       </p>
     </div>
   );

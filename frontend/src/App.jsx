@@ -15,11 +15,12 @@ import Spo2 from './components/spo2';
 import Map from './components/Map';
 import HeartVitals from './components/HeartVitals';
 import Bpm from './pages/Bpm';
+import Subscribe from './pages/Subscribe';
 
 function App() {
   const [auth, setAuth] = useState(false);
   useEffect(() => {
-    if (localStorage.getItem('currentUser')) {
+    if (sessionStorage.getItem('currentUser')) {
       setAuth(true);
     }
   }, []);
@@ -28,18 +29,19 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Dashboard />} />
-          <Route path="/:value" element={<Dashboard />} />
           <Route path="/login" element={<Login />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/doctor" element={<Doctor />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/report" element={<Report />} />
+          <Route exact path="/report" element={<Report />} />
+          <Route path="/report/:value" element={<Report />} />
           <Route path="/intro1" element={<Intro1 />} />
           <Route path="/spo2" element={<Spo2 />} />
           <Route path="/map" element={<Map />} />
           <Route path="/heart" element={<HeartVitals />} />
           <Route path="/bpm" element={<Bpm />} />
+          <Route path="/subscribe" element={<Subscribe />} />
         </Routes>
 
         <NavBar />

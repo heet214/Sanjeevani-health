@@ -31,8 +31,9 @@ export default function HealthCard() {
     //       console.log(error);
     //     });
 
-    if (!localStorage.getItem('cheatUser')) return (window.location = '/login');
-    const user = JSON.parse(localStorage.getItem('cheatUser'));
+    if (!sessionStorage.getItem('cheatUser'))
+      return (window.location = '/login');
+    const user = JSON.parse(sessionStorage.getItem('cheatUser'));
     console.log('CHEAT USER ', user);
 
     setName(user[0].name);

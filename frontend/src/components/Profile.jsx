@@ -16,16 +16,17 @@ import { BiArrowBack } from 'react-icons/bi';
 export default function Profile() {
   const [name, setName] = useState('');
   useEffect(() => {
-    if (!localStorage.getItem('cheatUser')) return (window.location = '/login');
-    const user = JSON.parse(localStorage.getItem('cheatUser'));
+    if (!sessionStorage.getItem('cheatUser'))
+      return (window.location = '/login');
+    const user = JSON.parse(sessionStorage.getItem('cheatUser'));
     console.log(user);
     setName(user[0].name);
   }, []);
 
   const handlelogout = () => {
-    if (localStorage.getItem('cheatUser')) {
+    if (sessionStorage.getItem('cheatUser')) {
       console.log('function called');
-      localStorage.removeItem('cheatUser');
+      sessionStorage.removeItem('cheatUser');
       window.location = '/login';
     }
   };
@@ -67,7 +68,13 @@ export default function Profile() {
                   <MDBBtn rounded size="lg" className="my-2 profile-btn">
                     Privacy Policy
                   </MDBBtn>
-                  <MDBBtn rounded size="lg" className="my-2 profile-btn">
+                  <MDBBtn
+                    onClick={() => {
+                      window.location = '/subscribe';
+                    }}
+                    rounded
+                    size="lg"
+                    className="my-2 profile-btn">
                     Subscription
                   </MDBBtn>
                   <MDBBtn rounded size="lg" className="my-2 profile-btn">
