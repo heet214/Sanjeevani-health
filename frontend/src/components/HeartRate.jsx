@@ -1,6 +1,8 @@
 import React from 'react';
 
 function HeartRate() {
+  const rate = sessionStorage.getItem('heart_rate');
+
   return (
     <div className="heart_rate_container">
       <div
@@ -11,7 +13,7 @@ function HeartRate() {
             Heart Rate
           </div>
           <div className="num_n_unit">
-            <div className="number_unit">96</div>
+            <div className="number_unit">{rate ? rate : 96}</div>
             <div className="unit">bpm</div>
           </div>
         </div>
