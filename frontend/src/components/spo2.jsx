@@ -72,10 +72,10 @@ class Spo2 extends Component {
           <h6>Drag & Drop File Here</h6>
           <span>OR</span>
 
-          <button className="my-3" onClick={this.handleSubmitFile}>
-            Browse File
-          </button>
           <input type="file" onChange={this.handleImagePreview} />
+          <button className="my-3" onClick={this.handleSubmitFile}>
+            Submit
+          </button>
         </div>
       </div>
     );
