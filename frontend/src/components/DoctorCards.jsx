@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
+
+
 export default function DoctorCards() {
   // useEffect(() => {
   //   axios
@@ -32,9 +34,9 @@ export default function DoctorCards() {
         <div
           className="card docCard p-2"
           style={{ height: '13rem', width: '45%', marginLeft: 'auto' }}>
-          <img class="card-img-top" src="..." alt="Card image cap" />
+          <img className="card-img-top" src="..." alt="Card image cap" />
           <div className="card-body">
-            <h5 className="card-title">{docs}</h5>
+            <h5 className="card-title">Dr. Meet Pithadia</h5>
             <p className="card-text">General physician near you</p>
             <a href="/" className="btn btn-primary">
               Contact
@@ -46,7 +48,7 @@ export default function DoctorCards() {
           style={{ height: '13rem', width: '45%', marginLeft: 'auto' }}>
           <img src="" className="card-img-top" alt="doc1" />
           <div className="card-body">
-            <h5 className="card-title">Card title</h5>
+            <h5 className="card-title">Dr. Deshna Gandhi</h5>
             <p className="card-text">General physician near you</p>
             <a href="/" className="btn btn-primary">
               Contact

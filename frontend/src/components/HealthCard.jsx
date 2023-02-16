@@ -16,7 +16,6 @@ export default function HealthCard() {
     //   axios
     //     .get(
     //       'http://localhost:8000/api/vitals/',
-
     //       {
     //         headers: {
     //           'Content-Type': 'application/json',
@@ -30,12 +29,10 @@ export default function HealthCard() {
     //     .catch((error) => {
     //       console.log(error);
     //     });
-
     if (!sessionStorage.getItem('cheatUser'))
       return (window.location = '/login');
     const user = JSON.parse(sessionStorage.getItem('cheatUser'));
     console.log('CHEAT USER ', user);
-
     setName(user[0].name);
     setId(user[0].id);
   }, []);
