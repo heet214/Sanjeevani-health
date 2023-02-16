@@ -38,7 +38,7 @@ export default function HealthCard() {
   }, []);
 
   return (
-    <div style={{ marginLeft: '6%' }}>
+    <div style={{ marginLeft: '1%' }}>
       <div
         className="card health-card rounded-5 shadow mx-auto p-3 mb-5"
         style={{ backgroundColor: '#1c6ba4', width: '95%', marginTop: '2rem' }}>

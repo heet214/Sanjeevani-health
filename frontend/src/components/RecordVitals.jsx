@@ -3,6 +3,9 @@ import { TbReportAnalytics } from 'react-icons/tb';
 import { RiVirusLine } from 'react-icons/ri';
 import { BiDonateBlood } from 'react-icons/bi';
 import { GiMedicalPack } from 'react-icons/gi';
+import {TbReport} from 'react-icons/tb'
+import {AiFillHeart} from 'react-icons/ai'
+import {GiBrain} from 'react-icons/gi'
 
 export default function RecordVitals() {
   return (
@@ -14,28 +17,28 @@ export default function RecordVitals() {
             window.location = '/spo2';
           }}
           className="vitals med shadow-sm">
-          <GiMedicalPack size={35}/>
+          <RiVirusLine size={35}/>
         </div>
         <div
           onClick={() => {
             window.location = '/heart';
           }}
           className="vitals spo2 shadow-sm">
-          <BiDonateBlood size={35} />
+          <TbReport size={35} />
         </div>
         <div
           onClick={() => {
             window.location = '/bpm';
           }}
           className="vitals report shadow-sm">
-          <TbReportAnalytics size={35} />
+          <AiFillHeart size={35} />
         </div>
         <div
           onClick={() => {
             window.location = '/stress';
           }}
           className="vitals virus shadow-sm">
-          <RiVirusLine size={35} />
+          <GiBrain size={35} />
         </div>
       </div>
     </div>

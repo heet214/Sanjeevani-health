@@ -19,7 +19,7 @@ export default function DoctorCards() {
   // }, []);
 
   return (
-    <div style={{ marginLeft: '7%' }}>
+    <div style={{ marginLeft: '1%' }}>
       <div
         className="Doc"
         style={{

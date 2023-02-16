@@ -170,6 +170,7 @@
 }
 
 .main_vital_container {
+  margin-left: 0;
   width: 80vw;
   height: 50px;
 }
