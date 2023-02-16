@@ -3,6 +3,7 @@ import HeartRate from '../components/HeartRate';
 import Oxygen from '../components/Oxygen';
 import Weight from '../components/Weight';
 import Documents from '../components/Documents';
+import img1 from '../assets/runningPerson.jpeg'
 
 function Report() {
   // const [bpm, setBpm] = useState('');
@@ -44,7 +45,7 @@ function Report() {
         <Weight />
       </div>
       <div className="third_row_container">
-        <Documents />
+        <img src={img1} width='100%'  height='100%'  />
       </div>
     </div>
   );
