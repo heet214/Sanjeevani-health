@@ -44,7 +44,7 @@ class Spo2 extends Component {
           console.log(res.data);
           const data = JSON.stringify(res.data);
           sessionStorage.setItem('spo2', data);
-          window.location = `/spo/${data}`;
+          window.location.href = `/spo2/${Math.floor(data)}`;
         })
         .catch((err) => {
           console.log(err);

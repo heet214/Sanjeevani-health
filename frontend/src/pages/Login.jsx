@@ -27,12 +27,14 @@ const Login = () => {
     //     console.log(error);
     //   });
 
+
+
     console.log(email, password);
 
     const userfile = JSON.parse(sessionStorage.getItem('userJSON'));
     console.log('userfile', userfile);
     const user = userfile.filter((user) => {
-      if (user.email == email && user.password == password) return user;
+      if (user.email == email && user.password == password) {return user}else{alert('NO user Found')}
     });
 
     if (user) {

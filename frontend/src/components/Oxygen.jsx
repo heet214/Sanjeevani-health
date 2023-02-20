@@ -40,7 +40,7 @@ function Oxygen() {
       </div>
       <div className="oxygen_bottom">
         <div className="oxygen_unit">SPO2</div>
-        <div className="oxygen_number">99</div>
+        <div className="oxygen_number">97</div>
       </div>
     </div>
   );

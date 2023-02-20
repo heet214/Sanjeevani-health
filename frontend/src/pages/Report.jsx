@@ -18,16 +18,25 @@ function Report() {
   var url = window.location.href;
   var urlArray = url.split('/');
   console.log('urlArray', urlArray);
+  var domain = urlArray[urlArray.length - 2];
   var value = urlArray[urlArray.length - 1];
   console.log('value', value);
-  if (value === 'report') {
-    sessionStorage.setItem('heart_rate', 81);
-  } else {
-    sessionStorage.setItem('heart_rate', value);
-  }
-  if (value === 'spo') {
-    sessionStorage.setItem('spo2', Math.floor(Math.random() * 95) + 4);
-  } else {
+
+  // if (domain === 'report') {
+  //   sessionStorage.setItem('heart_rate', 81);
+  // } else if(domain === 'report' && domain === 'spo2') {
+  //   sessionStorage.setItem('heart_rate', value);
+  // } else if (domain === 'spo') {
+
+  //   sessionStorage.setItem('spo2', value);
+  // } else {
+  //  // localStorage.setItem('spo2', Math.floor(Math.random() * 93) + 5);
+  //   sessionStorage.setItem('spo2', Math.floor(Math.random() * 93) + 5);
+  // }
+
+  if(value<95){
+    sessionStorage.setItem('report', value);
+  }else{
     sessionStorage.setItem('spo2', value);
   }
 
